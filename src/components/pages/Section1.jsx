@@ -34,7 +34,7 @@ const Section1 = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundImage: 'url(/images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg)',
+          backgroundImage: 'url(/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 0,
@@ -141,7 +141,7 @@ const Section1 = () => {
 
             <Button
               component="a"
-              href="https://www.linkedin.com/in/aditya-lakandri-1270b4192/overlay/1734490409271/single-media-viewer/?type=DOCUMENT&profileId=ACoAAC04dq8B4Rhnifyshwb8OQ5YoxD7xa1c-Vs"
+              href="https://www.linkedin.com/in/aditya-lakandri-1270b4192/overlay/1752386725386/single-media-viewer/?profileId=ACoAAC04dq8B4Rhnifyshwb8OQ5YoxD7xa1c-Vs"
               target="_blank"
               sx={{
                 fontSize: '1.6rem',

@@ -27,7 +27,7 @@ const About = () => {
               className="img"
               style={{
                 backgroundImage:
-                  "url(images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg)",
+                  "url(images/IMG-20230429-WA0115.jpg)",
               }}
             ></div>
           </motion.div>
@@ -92,22 +92,22 @@ const About = () => {
                   {
                     icon: <FaGithub />,
                     label: "Github",
-                    link: "https://github.com/adityalakandri",
+                    link: "https://github.com/adityalakandri3",
                   },
                   {
                     icon: <FaLinkedin />,
                     label: "LinkedIn",
-                    link: "https://www.linkedin.com/in/adityalakandri",
+                    link: "https://linkedin.com/in/aditya-lakandri-1270b4192",
                   },
                   {
                     icon: <FaFacebook />,
                     label: "Facebook",
-                    link: "https://www.facebook.com/aditya.lakandri",
+                    link: "https://www.facebook.com/profile.php?id=100006054464870",
                   },
                   {
                     icon: <FaInstagram />,
                     label: "Instagram",
-                    link: "https://www.instagram.com/adityalakandri",
+                    link: "https://www.instagram.com/__.aditya__13/",
                   },
                 ].map((item, index) => (
                   <motion.a

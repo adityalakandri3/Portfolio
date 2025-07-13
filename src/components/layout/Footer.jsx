@@ -10,6 +10,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll"; // import scroll link
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -36,7 +37,7 @@ const Footer = () => {
         >
           {/* Section 1 */}
           <motion.div className="footer-section" custom={1} variants={fadeUp}>
-            <h2 className="footer-heading">Lets talk about</h2>
+            <h2 className="footer-heading">Let&asop;s talk about</h2>
             <p className="footer-description">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts.
@@ -46,17 +47,24 @@ const Footer = () => {
             </a>
           </motion.div>
 
-          {/* Section 2 - Links (no hover added here) */}
+          {/* Section 2 - Scroll Links */}
           <motion.div className="footer-section" custom={2} variants={fadeUp}>
             <h2 className="footer-heading">Links</h2>
             <ul className="footer-links">
-              {["Home", "About", "Services", "Projects", "Contact"].map(
+              {["Home", "About", "Projects", "Education", "Contact"].map(
                 (link, i) => (
                   <li key={i}>
-                    <a href="#">
+                    <ScrollLink
+                      to={link.toLowerCase()}
+                      smooth={true}
+                      duration={500}
+                      offset={-70} // adjust based on header height
+                      spy={true}
+                      activeClass="active-link"
+                    >
                       <FaChevronRight className="arrow-icon" />
                       {link}
-                    </a>
+                    </ScrollLink>
                   </li>
                 )
               )}
@@ -89,7 +97,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            {/* Social Icons (existing hover retained, no new hover added) */}
+            {/* Social Media */}
             <div className="footer-social-media">
               {[
                 {
@@ -99,7 +107,8 @@ const Footer = () => {
                 },
                 {
                   icon: <FaFacebook />,
-                  link: "https://www.facebook.com/profile.php?id=100006054464870",
+                  link:
+                    "https://www.facebook.com/profile.php?id=100006054464870",
                 },
                 {
                   icon: <FaInstagram />,
